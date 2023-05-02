@@ -13,7 +13,7 @@ const corsOptions = {
   credentials: true, //included credentials as true
 };
 app.use(cors(corsOptions))
-mongoose.connect("mongodb+srv://hama:0123456a@spotify.6einhli.mongodb.net/test", {
+mongoose.connect(process.env.MONGO_URL, {
    useNewUrlParser: true,
    useUnifiedTopology: true
 }).then(() => {
