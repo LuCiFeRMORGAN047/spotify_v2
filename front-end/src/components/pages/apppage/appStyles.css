@@ -1,0 +1,37 @@
+.track:hover > img {
+  @apply scale-110 transition-all rounded-lg;
+}
+
+.track:hover > #play {
+  @apply scale-100 transition-all active:scale-95;
+}
+
+.player::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 50%;
+  @apply bg-white w-3 aspect-square;
+}
+.volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 50%;
+  @apply bg-white w-[10px] aspect-square;
+}
+
+.my-playlists::-webkit-scrollbar {
+  @apply w-1;
+}
+
+.my-playlists::-webkit-scrollbar-track {
+  border-radius: 999px;
+}
+
+.my-playlists::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  @apply bg-transparent;
+}
+.my-playlists:hover::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  @apply bg-neutral-700 transition-all;
+}
